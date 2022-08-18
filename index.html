@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <img src="imagen/Vector.png" alt="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="logica.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="imagen/Vector.png" alt="">
 
-    </header>
+        </header>
 
-    <main>
+        <main>
 
-        <div>
-            <form >
-                <input type="text" id="texto-a-encriptar" class="input-principal" placeholder="Ingrese el texto aqui">
-                <input type="submit" value="Encriptar" class="encriptar">
-                <input type="submit" value="Desencriptar" class="desencriptar">
-            </form>
+            <div>
+                <form>
+                    <input type="text" id= "texto-a-encriptar" class="input-principal"
+                        placeholder="Ingrese el texto aqui">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                    <input type="submit" value="Encriptar" class="encriptar">
+                    <input type="submit" value="Desencriptar"
+                        class="desencriptar">
+                </form>
+
+            </div>
+
+            <div>
+                <img src="imagen/Muñeco.png" alt="">
+            </div>
+
+        </main>
+
+        <footer>
+
+        </footer>
+        <script>
+
+        var texto = document.querySelector('.input-principal');
+        texto.focus();
+
+        function encriptarTexto(){
             
-        </div>
+            var encriptadoE = texto.value.replace(/e/gi,"enter");
+            var encriptadoI = encriptadoE.replace(/i/gi,"imes");
+            var encriptadoA = encriptadoI.replace(/a/gi,"ai");
+            var encriptadoO = encriptadoA.replace(/o/gi,"ober");
+            var encriptado = encriptadoO.replace(/u/gi,"ufat");
+            alert(encriptado);
 
-        <div>
-            <img src="imagen/Muñeco.png" alt="">
-        </div>
+        }
 
-    </main>
+        function desencriptarTexto(){
 
-    <footer>
+            var encriptadoU = texto.value.replace(/ufat/gi,"u");
+            var encriptadoO = encriptadoU.replace(/ober/gi,"o");
+            var encriptadoA = encriptadoO.replace(/ai/gi,"a");
+            var encriptadoI = encriptadoA.replace(/imes/gi,"i");
+            var encriptado = encriptadoI.replace(/enter/gi,"e");
+            alert(encriptado);
+        }
 
-    </footer>
-    
-</body>
+        var button = document.querySelector('.encriptar');
+        var button2 = document.querySelector('.desencriptar');
+        button.onclick = encriptarTexto;
+        button2.onclick = desencriptarTexto;
+
+    </script>
+    </body>
 </html>
