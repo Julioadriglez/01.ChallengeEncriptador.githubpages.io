@@ -16,25 +16,29 @@
         </header>
 
         <main>
-
-            <div>
-                <form>
-                    <input type="text" id= "texto-a-encriptar" class="input-principal"
-                        placeholder="">
+            <section>
+                <input type="text" id= "texto-a-encriptar" class="input-principal" placeholder="Ingresa el texto aqui">
+                <div>
                     <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                
+                <div>
                     <input type="submit" value="Encriptar" class="encriptar" onclick="encriptarTexto()">
-                    <input type="submit" value="Desencriptar"
-                        class="desencriptar" onclick=" desencriptarTexto()">
-                </form>
-
-            </div>
+                    <input type="submit" value="Desencriptar" class="desencriptar" onclick=" desencriptarTexto()">
+                </div>
+                
+            </section>
+    
+            <section>
+                <textarea  class="mensajeEncriptado" cols="8" rows="10"></textarea>
+                <input type="submit" value="copiar"
+                        class="copiar" onclick="copiarTextoEncriptado()">
+            </section>
 
             <div>
-                <img src="imagen/Muñeco.png" alt="">
-                <form >
-                    <input type="submit" value="copiar"
-                        class="copiar" >
-                </form>
+               
+                    
+                
             </div>
 
         </main>
