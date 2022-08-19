@@ -11,6 +11,7 @@ function encriptarTexto(){
     var encriptado = encriptadoO.replace(/u/gi,"ufat");
     mensajeEncriptado.value = encriptado;
     texto.value = "";
+    texto.focus();
 }
 
 function desencriptarTexto(){
@@ -22,12 +23,15 @@ function desencriptarTexto(){
     var desencriptado = desencriptadoI.replace(/enter/gi,"e");
     mensajeEncriptado.value = desencriptado;
     texto.value = "";
+    texto.focus();
 }
         
 function copiarTextoEncriptado(){
     mensajeEncriptado.select();
     navigator.clipboard.writeText(mensajeEncriptado.value)
-    mensaje.value = "";
-    alert("Texto Copiado")
+    texto.value = mensajeEncriptado.value;
+    mensajeEncriptado.value = "";
+    texto.focus();
+    
 }
 
