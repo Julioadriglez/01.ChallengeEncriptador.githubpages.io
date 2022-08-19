@@ -20,17 +20,21 @@
             <div>
                 <form>
                     <input type="text" id= "texto-a-encriptar" class="input-principal"
-                        placeholder="Ingrese el texto aqui">
+                        placeholder="">
                     <p>Solo letras minúsculas y sin acentos</p>
-                    <input type="submit" value="Encriptar" class="encriptar">
+                    <input type="submit" value="Encriptar" class="encriptar" onclick="encriptarTexto()">
                     <input type="submit" value="Desencriptar"
-                        class="desencriptar">
+                        class="desencriptar" onclick=" desencriptarTexto()">
                 </form>
 
             </div>
 
             <div>
                 <img src="imagen/Muñeco.png" alt="">
+                <form >
+                    <input type="submit" value="copiar"
+                        class="copiar" >
+                </form>
             </div>
 
         </main>
@@ -38,37 +42,6 @@
         <footer>
 
         </footer>
-        <script>
-
-        var texto = document.querySelector('.input-principal');
-        texto.focus();
-
-        function encriptarTexto(){
-            
-            var encriptadoE = texto.value.replace(/e/gi,"enter");
-            var encriptadoI = encriptadoE.replace(/i/gi,"imes");
-            var encriptadoA = encriptadoI.replace(/a/gi,"ai");
-            var encriptadoO = encriptadoA.replace(/o/gi,"ober");
-            var encriptado = encriptadoO.replace(/u/gi,"ufat");
-            alert(encriptado);
-
-        }
-
-        function desencriptarTexto(){
-
-            var encriptadoU = texto.value.replace(/ufat/gi,"u");
-            var encriptadoO = encriptadoU.replace(/ober/gi,"o");
-            var encriptadoA = encriptadoO.replace(/ai/gi,"a");
-            var encriptadoI = encriptadoA.replace(/imes/gi,"i");
-            var encriptado = encriptadoI.replace(/enter/gi,"e");
-            alert(encriptado);
-        }
-
-        var button = document.querySelector('.encriptar');
-        var button2 = document.querySelector('.desencriptar');
-        button.onclick = encriptarTexto;
-        button2.onclick = desencriptarTexto;
-
-    </script>
+        <script src="script.js"></script>
     </body>
 </html>
