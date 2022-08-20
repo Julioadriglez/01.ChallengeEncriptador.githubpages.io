@@ -10,26 +10,25 @@
         <script src="logica.js"></script>
     </head>
     <body>
-        <header>
-            <img src="imagen/Vector.png" alt="">
-
+        <header class="logo">
+            <img src="imagen/Vector.png" alt="logo de encriptador">
         </header>
 
         <main>
-            <section>
+            <section class="contenedor-encriptar">
                 <input type="text" id= "texto-a-encriptar" class="input-principal" placeholder="Ingresa el texto aqui">
-                <div>
-                    <p>Solo letras minúsculas y sin acentos</p>
+                <div class="advertencias">
+                    <h5>Solo letras minúsculas y sin acentos</h5>
                 </div>
                 
-                <div>
+                <div class="botones-principales">
                     <input type="submit" value="Encriptar" class="encriptar" onclick="encriptarTexto()">
                     <input type="submit" value="Desencriptar" class="desencriptar" onclick=" desencriptarTexto()">
                 </div>
                 
             </section>
     
-            <section>
+            <section class="contenedor-desencriptar">
                 <textarea  class="mensajeEncriptado" cols="8" rows="10"></textarea>
                 <input type="submit" value="copiar"
                         class="copiar" onclick="copiarTextoEncriptado()">
