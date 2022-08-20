@@ -1,0 +1,67 @@
+.logo{
+    width: 120px;
+    height: 48px;
+    flex: none;
+    padding: .4% 5% 5% 2%;
+    position: absolute;
+}
+
+main{
+    position: relative;
+    display: flex;
+    margin: 3% 4% 8% 15%;
+}
+
+ .contenedor-encriptar{
+    width: 60%;
+    height: 100%;
+    margin-top: 10%;
+    
+ }
+
+ .input-principal{
+    font-size: 32px;
+    font-weight: bold;
+    color: #0A3871;
+    border: white;
+ }
+
+ .advertencias{
+    margin-top: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0A3871;
+ }
+
+ .botones-principales{
+    padding-top: 10px;
+ }
+
+ .encriptar{
+    width: 40%;
+    height: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #0A3871;
+    background: #0A3871;
+    color: white;
+    margin-right: 10px;
+
+ }
+
+ .desencriptar{
+    width: 40%;
+    height: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #0A3871;
+    margin-right: px;
+
+ }
+
+ .contenedor-desencriptar{
+    width: 40%;
+
+ }
