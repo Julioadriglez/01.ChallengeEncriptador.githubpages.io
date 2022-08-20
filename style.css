@@ -1,5 +1,6 @@
 body{
    background: #E5E5E5;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .logo{
     width: 120px;
@@ -23,14 +24,15 @@ main{
 
  .input-principal{
    width: 80%;
-   font-size: 32px;
+   font-size: 30px;
    font-weight: bold;
    color: #0A3871;
    border: none; background: #E5E5E5;
  }
  
- .input-principal::placeholder{
-  
+.input-principal::placeholder{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: #0A3871;
  }
 
 .input-principal:focus{
@@ -43,6 +45,13 @@ main{
    font-weight: bold;
    color: #0A3871;
  }
+
+.signo-advertencia{
+   width: 20px;
+   height: 20px;
+   position: absolute;
+
+}
 
  .botones-principales{
     padding-top: 10px;
@@ -111,7 +120,8 @@ main{
    padding-top: 450px;
    color: #0A3871;
    text-align: center;
-   font-size: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 17px;
  }
 
  .mensajeEncriptado:focus{
