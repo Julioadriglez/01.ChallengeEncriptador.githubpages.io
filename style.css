@@ -22,10 +22,15 @@ main{
  }
 
  .input-principal{
-    font-size: 32px;
-    font-weight: bold;
-    color: #0A3871;
-    border: white;
+   width: 80%;
+   font-size: 32px;
+   font-weight: bold;
+   color: #0A3871;
+   border: none; background: #E5E5E5;
+ }
+ 
+ .input-principal::placeholder{
+  
  }
 
 .input-principal:focus{
@@ -33,7 +38,7 @@ main{
 }
 
  .advertencias{
-   margin-top: 39%;
+   margin-top: 10.5%;
    font-size: 20px;
    font-weight: bold;
    color: #0A3871;
