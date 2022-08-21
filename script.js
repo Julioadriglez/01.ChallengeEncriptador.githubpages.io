@@ -25,6 +25,7 @@ function desencriptarTexto(){
     mensajeEncriptado.value = desencriptado;
     texto.value = "";
     texto.focus();
+    mensajeEncriptado.style.backgroundImage="none";
 }
         
 function copiarTextoEncriptado(){
