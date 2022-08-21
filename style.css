@@ -144,3 +144,25 @@ main{
    cursor: pointer;
  }
  
+ @media screen and (max-width:480px){
+   main{
+      height: 100%;
+      display: block; 
+      position: absolute;
+   } 
+
+   .logo{
+      width: 100%;
+      text-align: center;
+   }
+
+   .input-principal{
+      margin-top: 40px;
+   }
+  
+   .contenedor-desencriptar,.contenedor-encriptar{
+      width: 100%;
+   }
+   
+ }
+
