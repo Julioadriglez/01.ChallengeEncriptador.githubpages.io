@@ -18,7 +18,7 @@ main {
 }
 
 .contenedor-encriptar {
-   width: 80%;
+   width: 70%;
    height: 100%;
    margin-top: 8%;
 }
@@ -112,10 +112,9 @@ main {
 
 .mensajeEncriptado {
    width: 90%;
-   height: 82%;
+   height: 78.5%;
    border: none;
    margin-top: 15px;
-   border-radius: 25px;
    font-size: 25px;
    color: #0A3871;
    background: url(imagen/Muñeco.png);
@@ -142,12 +141,13 @@ main {
    font-weight: bold;
    border-radius: 15px;
    border: 1px solid #0A3871;
-   margin-top: 10px;
+   margin-top: 7.5%;
    transition: 1s all;
    cursor: pointer;
 }
 
 footer {
+   width: 100%;
    background: #0A3871;
    color: #E5E5E5;
    text-align: center;
@@ -156,9 +156,26 @@ footer {
    font-weight: bold;
 }
 
+.nombre-autor{
+   margin-top: 5%;
+}
+
+
+footer div{
+   display: inline-flex;
+
+}
+footer a{
+   margin-right: 10px;
+}
+
+.proyecto{
+   margin-top: px;
+}
 .github .linkedin .proyecto:hover{
    color: black;
    text-decoration: underline;
+   
 }
 
 @media screen and (max-width:480px) {
