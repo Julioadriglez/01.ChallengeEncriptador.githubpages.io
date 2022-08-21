@@ -28,6 +28,7 @@ main{
    font-weight: bold;
    color: #0A3871;
    border: none; background: #E5E5E5;
+   text-transform:lowercase;
  }
  
 .input-principal::placeholder{
@@ -50,7 +51,10 @@ main{
    width: 20px;
    height: 20px;
    position: absolute;
+}
 
+.texto-advertencia{
+   padding-left: 30px;
 }
 
  .botones-principales{
@@ -99,13 +103,13 @@ main{
    background: white;
    text-align: center;
    border-radius: 25px;
-   box-shadow: 0px 1px 40px 2px #0000008f;
+   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
    
  }
 
  .mensajeEncriptado{
-   width: 250px;
-   height: 590px;
+   width: 90%;
+   height: 82%;
    border: none;
    margin-top: 15px;
    border-radius: 25px;
@@ -135,7 +139,8 @@ main{
    font-weight: bold;
    border-radius: 15px;
    border: 1px solid #0A3871;
-   margin-top: 15px;
+   margin-top: 10px;
    transition: 1s all;
    cursor: pointer;
  }
+ 
